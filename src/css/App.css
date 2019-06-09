@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Aclonica|Work+Sans&display=swap');
+
+/* Main */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+header {
+  background-color: #111;
+  color: #818181;
+  text-align: center;
+}
+
+#header-title {
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Aclonica', sans-serif;
+  color: white;
+}
+
+.welcome-title {
+  font-size: 20px;
+  font-family: 'Aclonica', sans-serif;
+}
+
+.welcome-desc {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+#map {
+  height: 90vh;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.open-list {
+  font-size: 28px;
+  margin-left: 5px;
+  margin-top: 5px;
+  float: left;
+  cursor: pointer;
+}
+
+.open-list, .closebtn {
+  background-color: black;
+  border: 0;
+  color: white;
+}
+
+/* Sidebar */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav button {
+  cursor: pointer;
+  background-color: #111;
+  text-align: left;
+  border: none;
+}
+
+.sidenav button, .sidenav input {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav button:hover {
+  color: #f1f1f1;
+}
+
+.closebtn {
+  cursor: pointer;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Info Window */
+.info-content {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.info-img {
+  background-color: #6B0F0F;
+  text-align: center;
+  padding: 15px;
+}
+
+.venue-name {
+  font-family: 'Aclonica', sans-serif;
+}
+
+.info-venue-name, .info-venue-categ {
+  text-align: center;
+}
+
+.info-venue-address {
+  margin-top: 10px;
+  padding: 7px;
+  border-radius: 5px;
+  background: repeating-linear-gradient(
+    45deg,
+    #FFFAEA,
+    #FFFAEA 5px,
+    #EFE9D9 5px,
+    #EFE9D9 15px
+  );
+}
+
+.info-venue-address span {
+  display: block;
+}
+
+.info-venue-credits {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Search */
+#search {
+  float: right;
+  border: none;
+  height: 25px;
+  width: 40%;
+  margin: 5px 10px 0px 0px;
+}
+
+#searchbtn {
+  float: right;
+}
+
+/* Responsivity */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav span {font-size: 18px;}
+}
