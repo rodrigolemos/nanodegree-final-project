@@ -238,6 +238,12 @@ class App extends Component {
         true,
         true
       ];
+      if (script.onerror) {
+        this.setState({
+          warning: true,
+          warningMsg: 'Ops! Desculpe, não foi possível carregar a API do Google Maps. Por favor, tente novamente mais tarde.'
+        });
+      }
       index.parentNode.insertBefore(script, index);
     } else {
       this.initMap();
